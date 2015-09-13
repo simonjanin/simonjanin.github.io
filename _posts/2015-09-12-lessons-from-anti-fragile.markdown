@@ -83,7 +83,7 @@ Cryptography is the art and science of using mathematical objects to secure and 
 
 The cryptographic systems themselves are at most robust, but the methods that are being developped to build stronger systems and analyse them are constantly refined. And each successful attack on a cipher or any cryptographic function makes the process better.
 
-`For cryptography to be antifragile, it has to get better at faster rate than cryptanalysis gets better`. Especially when we consider that problems such as factoring large numbers get increasingly hard with an increase in key size; while generating two (increasingly) large primes number doesn't get much harder with an increase in key size.
+`For cryptography to be antifragile, it has to get better at a faster rate than cryptanalysis gets better`. Especially when we consider that problems such as factoring large numbers get increasingly hard with an increase in key size; while generating two (increasingly) large primes number doesn't get much harder with an increase in key size.
 That means that even if we were to have a practical polynomial factoring algorithm (be it for example with Shor's algorithm using a quantum computer, or a classical computer algorithm): as long as it is comparatively easier to generate two (very) large prime numbers than to factor their product for increasing key-size, public key cryptography is antifragile (an increase in key-size as well as computational power makes the system more robust/secure).
 
 #### Open-source and anti-fragility
