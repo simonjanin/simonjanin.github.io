@@ -96,7 +96,7 @@ We are therefore talking about the <code>expected real-world behavior of a syste
 <h4 id="peer-to-peer-systems">Peer-to-peer systems</h4>
 
 <p>In their seminal paper on <a href="https://www.usenix.org/legacy/event/hotbots07/tech/full_papers/wang/wang_html/">peer-to-peer Botnets, Wang et al. (2007)</a> showed that their botnet was very resistant to outside attackers trying to take it down (i.e law enforcement).
-The following figure is directly taken from the paper. We notice that <code>taking down less than 80% of the bots in the network has virtually no effect on connectivity</code> - a striking manifestion of robustness.</p>
+The following figure is directly taken from the paper. We notice that <code>taking down less than 70% of the bots in the network has virtually no effect on connectivity</code> - a striking manifestion of robustness.</p>
 
 <p><img src="/downloads/antifragileBotnet.png" alt="Antifragile Botnet" /></p>
 
@@ -109,7 +109,7 @@ The following figure is directly taken from the paper. We notice that <code>taki
 <p>This clearly shows that <code>a given system can simultaneously have parts which are fragile, robust and/or antifragile</code> : 
 <strong>those notions are therefore entirely context-specific</strong>.</p>
 
-<p>On the figure we see that the botnet is robust (has a linear response to stress) until about 80% of bots are taken down, at which point the botnet becomes fragile (has an exponentially worse response to stress) and collapses.</p>
+<p>On the figure we see that the botnet is robust (has a linear response to stress) until about 70% of bots are taken down, at which point the botnet becomes fragile (has an exponentially worse response to stress) and collapses.</p>
 
 <p>A good heuristic to judge the (anti)-fragility of a system is to <code>ask whether it is accelerating towards harm or benefit</code>.</p>
 
@@ -161,12 +161,10 @@ The following figure is directly taken from the paper. We notice that <code>taki
 
 <p>Cryptography is the art and science of using mathematical objects to secure and hide information.</p>
 
-<p>I believe that cryptography is antifragile since it gets better every time it is attacked.
-In Cesar’s time, trivial ciphers were used to transmit information securely; now, we can arbitrarily increase the size of keys (in public-key cryptography) and use larger hash functions (as well as more iterations) to secure data - so that Moore’s law cannot catch up.
-The cryptographic systems themselves are at most robust, but the methods that are being developped to build stronger systems and analyse them are constantly refined. And each successful attack on a cipher or any cryptographic function makes the process better.</p>
+<p>The cryptographic systems themselves are at most robust, but the methods that are being developped to build stronger systems and analyse them are constantly refined. And each successful attack on a cipher or any cryptographic function makes the process better.</p>
 
-<p><code>For cryptography to be antifragile, it has to get better at faster rate than cryptanalysis gets better</code> - it seems to be the case. Especially when we consider that problems such as factoring large numbers get increasingly hard with an increase in key size; while generating two (increasingly) large primes number doesn’t get much harder with an increase in key size.
-That means that even if we were to have a practical polynomial factoring algorithm (be it with Shor’s algorithm using a quantum computer, or a classical computer algorithm): as long as it is comparatively easier to generate two (very) large prime numbers than to factor their product, public key cryptography is antifragile (an increase in key-size as well as computational power makes the system more robust/secure).</p>
+<p><code>For cryptography to be antifragile, it has to get better at faster rate than cryptanalysis gets better</code>. Especially when we consider that problems such as factoring large numbers get increasingly hard with an increase in key size; while generating two (increasingly) large primes number doesn’t get much harder with an increase in key size.
+That means that even if we were to have a practical polynomial factoring algorithm (be it for example with Shor’s algorithm using a quantum computer, or a classical computer algorithm): as long as it is comparatively easier to generate two (very) large prime numbers than to factor their product for increasing key-size, public key cryptography is antifragile (an increase in key-size as well as computational power makes the system more robust/secure).</p>
 
 <h4 id="open-source-and-anti-fragility">Open-source and anti-fragility</h4>
 
