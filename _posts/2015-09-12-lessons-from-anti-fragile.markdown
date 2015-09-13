@@ -94,3 +94,8 @@ Open-source collaboration, be it Wikipedia or Linux, is inherently anti-fragile:
 * produces reversible, small errors
 * gains from a larger number of contributors
 * empirical and grounded in reality
+
+### Conclusion
+
+In this short article I tried to give an intuition, if not an overview, of the concept of antifragility.
+There are many other lessons to be learned from this book, which may justify a second article!
