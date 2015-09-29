@@ -6,9 +6,56 @@
 </description>
     <link>http://simonjanin.ch/</link>
     <atom:link href="http://simonjanin.ch/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 14 Sep 2015 00:47:59 +0200</pubDate>
-    <lastBuildDate>Mon, 14 Sep 2015 00:47:59 +0200</lastBuildDate>
+    <pubDate>Tue, 29 Sep 2015 19:04:45 +0200</pubDate>
+    <lastBuildDate>Tue, 29 Sep 2015 19:04:45 +0200</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>On Cryptocurrencies: Bitcoin, Ethereum - and how to price them</title>
+        <description>&lt;p&gt;I’ve recently discovered &lt;strong&gt;Ethereum&lt;/strong&gt; - &lt;code&gt;more than a cryptocurrency, it is a general-purpose Turing-complete blockchain-based platform for hosting decentralized applications&lt;/code&gt;. I had been waiting for something like Ethereum for more than two years, after I realized that the potential of Bitcoin was limited by its inherent weaknesses in term of mining, centralization and incentive structure.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I had promised myself to seize the next blockchain-based opportunity, and I feel that Ethereum could be it.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;But its complexity makes it difficult to grasp, so after quite a bit a research I decided to make a video of what I found to help me understand and price Ethereum.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/16cSBp2NW3o&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h4 id=&quot;video-outline&quot;&gt;&lt;em&gt;Video outline&lt;/em&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;[0:00]&lt;/strong&gt; Introduction: the various cryptocurrencies&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;[1:30]&lt;/strong&gt; Ethereum prices of the last month&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;[4:30]&lt;/strong&gt; Market Cap&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;[8:20]&lt;/strong&gt; Ethereum mining hypothesis&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;[10:40]&lt;/strong&gt; Total Ether supply&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;[11:40]&lt;/strong&gt; Block difficulty&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;[12:40]&lt;/strong&gt; Refutation of hypothesis&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;[14:30]&lt;/strong&gt; An interesting contract…&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;[16:30]&lt;/strong&gt; Inside story&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;[18:00]&lt;/strong&gt; A convincing prediction&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;[19:00]&lt;/strong&gt; Summary&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;[22:10]&lt;/strong&gt; Further prediction&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;[24:00]&lt;/strong&gt; Speculation and analysis; comparision with Bitcoin&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;[27:50]&lt;/strong&gt; Conclusion&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;[29:00]&lt;/strong&gt; Notes about the potential of Ethereum&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;[30:00]&lt;/strong&gt; Personal strategy&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/downloads/ethereum.png&quot; alt=&quot;Ethereum&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 29 Sep 2015 20:34:30 +0200</pubDate>
+        <link>http://simonjanin.ch/cryptocurrency/ethereum/2015/09/29/on-cryptocurrencies-bitcoin-and-ethereum-and-how-to-price-them.html</link>
+        <guid isPermaLink="true">http://simonjanin.ch/cryptocurrency/ethereum/2015/09/29/on-cryptocurrencies-bitcoin-and-ethereum-and-how-to-price-them.html</guid>
+        
+        
+        <category>cryptocurrency</category>
+        
+        <category>ethereum</category>
+        
+      </item>
     
       <item>
         <title>To solve the Theory of everything, solve AI first</title>
