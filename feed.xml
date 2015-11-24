@@ -1,14 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Simon Janin's Blog</title>
+    <title>Simon Janin&#39;s Blog</title>
     <description>Simon Janin writes articles on various books, computer and technology, self-improvement and social issues.
 </description>
     <link>http://simonjanin.ch/</link>
     <atom:link href="http://simonjanin.ch/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 29 Sep 2015 22:00:07 +0200</pubDate>
-    <lastBuildDate>Tue, 29 Sep 2015 22:00:07 +0200</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <pubDate>Tue, 24 Nov 2015 23:30:53 +0100</pubDate>
+    <lastBuildDate>Tue, 24 Nov 2015 23:30:53 +0100</lastBuildDate>
+    <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>Ethereum for Investors -- Introduction</title>
+        <description>&lt;p&gt;Since my last article on Ethereum, I have diven deep into the platform: I read extensively on the topic and watched countless videos to help me understand the technicalities of the blockchain; this drive translated into the urge to record YouTube videos and to start a channel dedicated to Ethereum and blockchain technologies.
+Today, I release a video aimed at potential investors in Ethereum (and the ecosystem around it) – people who are programmers, enthusiasts, newcomers or venture capitalists.
+My goal is to make Ethereum accessible to more people, and to help them understand the platform better – especially since so many questions are coming up again and again on reddit and the forums (the issuance model, the applications, smart contracts, DAPPS, Proof of Stake, Regulations, etc.).&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/nDY0s_e3n34&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Next week, I will release a video purely focused on investment: what are the risks and opportunities, how to think about Ethereum and what factors are most important to make good investing decisions. I will also talk specifically about the projects and startups that are flourishing in the Ethereum ecosystem.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 21 Nov 2015 16:34:30 +0100</pubDate>
+        <link>http://simonjanin.ch/cryptocurrency/ethereum/2015/11/21/ethereum-for-investors.html</link>
+        <guid isPermaLink="true">http://simonjanin.ch/cryptocurrency/ethereum/2015/11/21/ethereum-for-investors.html</guid>
+        
+        
+        <category>cryptocurrency</category>
+        
+        <category>ethereum</category>
+        
+      </item>
+    
+      <item>
+        <title>The n-back Challenge</title>
+        <description>&lt;iframe width=&quot;600&quot; height=&quot;1500&quot; src=&quot;https://docs.google.com/spreadsheets/d/15cOSi6QUyg3gW90Kg4hEddKFSo6B6WFYsZMXRCITtS0/pubhtml?gid=859276825&amp;amp;single=true&amp;amp;widget=true&amp;amp;headers=false&quot;&gt;&lt;/iframe&gt;
+
+&lt;iframe width=&quot;600&quot; height=&quot;1500&quot; src=&quot;https://docs.google.com/spreadsheets/d/15cOSi6QUyg3gW90Kg4hEddKFSo6B6WFYsZMXRCITtS0/pubhtml?gid=0&amp;amp;single=true&amp;amp;widget=true&amp;amp;headers=false&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Thu, 15 Oct 2015 22:59:50 +0200</pubDate>
+        <link>http://simonjanin.ch/brain-training/dual-n-back/2015/10/15/the-n-back-challenge.html</link>
+        <guid isPermaLink="true">http://simonjanin.ch/brain-training/dual-n-back/2015/10/15/the-n-back-challenge.html</guid>
+        
+        
+        <category>brain-training</category>
+        
+        <category>dual-n-back</category>
+        
+      </item>
     
       <item>
         <title>On Cryptocurrencies: Bitcoin, Ethereum - and how to price them</title>
@@ -59,8 +97,8 @@
     
       <item>
         <title>To solve the Theory of everything, solve AI first</title>
-        <description>&lt;p&gt;In this 16 minutes talk, co-founder and CEO of Deepmind (now Google Deepmind) Demis Hassabis presents his ideas and goals on artificial intelligence and learning. He goes on to say that utimately, we need to solve AI to solve the grand questions of humankind - the grandest one being the theory of everything, a perfect physical model of the universe accounting for litteraly &lt;code&gt;everything&lt;/code&gt;. It might indeed take an AI to solve the inconsistencies physicists encounter at sub-nano level at very high energies, since those problems require to both use quantum mechanics and general relativity - which collide in the extreme cases.&lt;/p&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/rbsqaJwpu6A&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+        <description>&lt;p&gt;In this 16 minutes talk, co-founder and CEO of Deepmind (now Google Deepmind) Demis Hassabis presents his ideas and goals on artificial intelligence and learning. He goes on to say that utimately, we need to solve AI to solve the grand questions of humankind - the grandest one being the theory of everything, a perfect physical model of the universe accounting for litteraly &lt;code&gt;everything&lt;/code&gt;. It might indeed take an AI to solve the inconsistencies physicists encounter at sub-nano level at very high energies, since those problems require to both use quantum mechanics and general relativity - which collide in the extreme cases. 
+&amp;lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/rbsqaJwpu6A&quot; frameborder=&quot;0&quot; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/p&gt;
 
 &lt;p&gt;As a Go player, I am tempted to make a prediction on the evolution of computer Go. I have been warned from making such risky predictions, but I feel that even if I turn out to be wrong, I’ll learn from them since I’ll have written them down - this Blog will serve as a track-record for my predictions, and I’m looking forward to seeing how badly I’m wrong in a few years!&lt;/p&gt;
 
@@ -85,7 +123,7 @@
       </item>
     
       <item>
-        <title>Lessons from Nassim Taleb's book Antifragile</title>
+        <title>Lessons from Nassim Taleb&#39;s book Antifragile</title>
         <description>&lt;p&gt;I just finished reading Nassim Taleb’s book &lt;em&gt;Antifragile&lt;/em&gt;, I’ll try to distill some of the lessons we can derive from it, from the theoretical to the practical.
 My goal is to clarify the concepts used in the book as well as to apply them broadly.&lt;/p&gt;
 
@@ -94,7 +132,7 @@ My goal is to clarify the concepts used in the book as well as to apply them bro
 &lt;p&gt;We are already familiar with the notions of fragility and robustness, but let us define them rigorously:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;a system is &lt;strong&gt;fragile&lt;/strong&gt; when the response to stress gets &lt;em&gt;super-linearly&lt;/em&gt; &lt;code&gt;worse&lt;/code&gt; as stress &lt;code&gt;increases&lt;/code&gt; (up to a certain point).&lt;/li&gt;
+  &lt;li&gt;a system is &lt;strong&gt;fragile&lt;/strong&gt; when the response to stress gets &lt;em&gt;super-linearly&lt;/em&gt; &lt;code&gt;worse&lt;/code&gt; as stress &lt;code&gt;increases&lt;/code&gt; (up to a certain point). &lt;/li&gt;
   &lt;li&gt;a system is &lt;strong&gt;robust&lt;/strong&gt; when the response to stress is &lt;em&gt;linear&lt;/em&gt; (up to a certain point).&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -232,23 +270,23 @@ There are many other lessons to be learned from this book, which may justify a s
 
 &lt;p&gt;Let’s try now to highlight some &lt;code&gt;assembly code&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-asm&quot; data-lang=&quot;asm&quot;&gt;&lt;span class=&quot;lineno&quot;&gt; 1&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;bits&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;32&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 2&lt;/span&gt; 
-&lt;span class=&quot;lineno&quot;&gt; 3&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;exec:&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 4&lt;/span&gt;     &lt;span class=&quot;nf&quot;&gt;xor&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;eax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;eax&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 5&lt;/span&gt;     &lt;span class=&quot;nf&quot;&gt;xor&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ebx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ebx&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 6&lt;/span&gt;     &lt;span class=&quot;nf&quot;&gt;xor&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ecx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ecx&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 7&lt;/span&gt;     &lt;span class=&quot;nf&quot;&gt;xor&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;edx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;edx&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt; 8&lt;/span&gt; 
-&lt;span class=&quot;lineno&quot;&gt; 9&lt;/span&gt;     &lt;span class=&quot;nf&quot;&gt;mov&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;al&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;10&lt;/span&gt; 
-&lt;span class=&quot;lineno&quot;&gt;11&lt;/span&gt;     &lt;span class=&quot;na&quot;&gt;...&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;12&lt;/span&gt; 
-&lt;span class=&quot;lineno&quot;&gt;13&lt;/span&gt;     &lt;span class=&quot;nf&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0x80&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;14&lt;/span&gt; 
-&lt;span class=&quot;lineno&quot;&gt;15&lt;/span&gt;     &lt;span class=&quot;nf&quot;&gt;mov&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;al&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;16&lt;/span&gt;     &lt;span class=&quot;nf&quot;&gt;xor&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ebx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ebx&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;17&lt;/span&gt;     &lt;span class=&quot;nf&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0x80&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-asm&quot; data-lang=&quot;asm&quot;&gt;&lt;span class=&quot;lineno&quot;&gt; 1 &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;bits&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;32&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 2 &lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 3 &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;exec:&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 4 &lt;/span&gt;    &lt;span class=&quot;nf&quot;&gt;xor&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;eax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;eax&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 5 &lt;/span&gt;    &lt;span class=&quot;nf&quot;&gt;xor&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ebx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ebx&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 6 &lt;/span&gt;    &lt;span class=&quot;nf&quot;&gt;xor&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ecx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ecx&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 7 &lt;/span&gt;    &lt;span class=&quot;nf&quot;&gt;xor&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;edx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;edx&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 8 &lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 9 &lt;/span&gt;    &lt;span class=&quot;nf&quot;&gt;mov&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;al&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;10 &lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;11 &lt;/span&gt;    &lt;span class=&quot;na&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;12 &lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;13 &lt;/span&gt;    &lt;span class=&quot;nf&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0x80&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;14 &lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;15 &lt;/span&gt;    &lt;span class=&quot;nf&quot;&gt;mov&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;al&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;16 &lt;/span&gt;    &lt;span class=&quot;nf&quot;&gt;xor&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ebx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ebx&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;17 &lt;/span&gt;    &lt;span class=&quot;nf&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0x80&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;looking-forward&quot;&gt;Looking forward&lt;/h3&gt;
 &lt;p&gt;I set myself the goal to write a blog post every week for the next few months, either on a book I am reading, or on the various topics I’m interested in.&lt;/p&gt;
