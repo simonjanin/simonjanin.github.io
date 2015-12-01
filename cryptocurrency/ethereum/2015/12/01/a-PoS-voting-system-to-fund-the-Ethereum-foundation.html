@@ -64,12 +64,12 @@
 
   <article class="post-content">
     <p>Projects of the scale and complexity of Ethereum and Bitcoin are typically subjected to the issue of how to fund them.
-The Bitcoin Foundation is founded by a consequent number of actors, some relatively large Bitcoin-based ventures as well as a fair number of individuals.
+The <a href="http://bitcoinfoundation.org/member/">Bitcoin Foundation</a> is founded by a consequent number of actors, some relatively large Bitcoin-based ventures as well as a fair number of individuals.
 Nonetheless, as of today, only three members of the Bitcoin foundation are actually paid salaries.</p>
 
 <p><code>Ethereum is a very complex project, and it seems obvious that it could not be realized with only three full-time developers -- notwithstanding the large open-source participation it has benefited from, the core development of the platform requires a large focused effort.</code></p>
 
-<p>There have been a few proposals on how to fund the Ethereum foundation in the future: </p>
+<p>There have been a few proposals on how to fund the <a href="https://www.ethereum.org/foundation">Ethereum foundation</a> in the future: </p>
 
 <ul>
   <li>sponsorships</li>
@@ -79,7 +79,7 @@ Nonetheless, as of today, only three members of the Bitcoin foundation are actua
 </ul>
 
 <p>Those options are not mutually exclusive – although I particularly dislike the third option of artificially increasing supply.
-In this article I will explore the last possibility, focusing solely on Proof of Stake – which, to my knowledge, has not been proposed before.</p>
+In this article I will explore the last possibility, focusing solely on Proof of Stake.</p>
 
 <h4 id="the-proposal">The proposal</h4>
 
@@ -88,11 +88,11 @@ Alright, let’s get started!</p>
 
 <p>Let us introduce the parameter <script type="math/tex">p</script> which is the percentage of the transactions fees that will be donated to the Ethereum foundation (it could apply to the block reward as well, this depends on the actual Proof of Stake implementation, so I will stick to the first option for now).
 Each time a new block is generated, that is every 17 seconds as of today, each validator <script type="math/tex">i</script> of the platform will cast a vote <script type="math/tex">v_{i} \in [0,M]</script> of weight <script type="math/tex">w_{i}</script> linearly proportional to its actual bounded stake in the platform in the form of a percentage. <script type="math/tex">% <![CDATA[
-0 < M \leq 1 %]]></script> is the maximal allowed value for a vote
-The vote <script type="math/tex">v_{i}</script> corresponds to the <script type="math/tex">p</script> value that the validator wishes to be enforced. Concretely he would choose <script type="math/tex">v_{i} = 0.00</script> if he would like <script type="math/tex">p</script> to become <script type="math/tex">0</script>, while he would select <script type="math/tex">% <![CDATA[
-0 < v_{i} \leq 1 %]]></script> otherwise.</p>
+0 < M \leq 1 %]]></script> is the maximal allowed value for a vote.</p>
 
-<p>After every validator has voted, the <script type="math/tex">p</script> value for the present block is given bya simple weighted sum: <script type="math/tex">p = \sum_{i} v_{i} *w_{i}</script>. Additionnally, we could limit <script type="math/tex">p</script> within some range, typically <script type="math/tex">0.5</script> or less.
+<p>The vote <script type="math/tex">v_{i}</script> corresponds to the <script type="math/tex">p</script> value that the validator wishes to be enforced. Concretely he would choose <script type="math/tex">v_{i} = 0.00</script> if he would like <script type="math/tex">p</script> to become <script type="math/tex">0</script>, while he would select <script type="math/tex">% <![CDATA[
+0 < v_{i} \leq 1 %]]></script> otherwise.
+After every validator has voted, the <script type="math/tex">p</script> value for the present block is given by simple weighted sum: <script type="math/tex">p = \sum_{i} v_{i} *w_{i}</script>. Additionnally, we could limit <script type="math/tex">p</script> within some range, typically <script type="math/tex">0.5</script> or less.
 To make things simpler, a validator casts his vote <script type="math/tex">v_{i}</script> each time he bonds some stake in the platform, and he can change his vote every <script type="math/tex">T</script> blocks for <script type="math/tex">T</script> desirably relatively large but smaller than the bonding time.</p>
 
 <p>Instead of limiting this feature to sending transactions fees to the address of the Ethereum Foundation, this could be extended into a full-fledged feature of the validating algorithm – for funding related side projects. This might be interesting; although there are quite a few subtleties that would introduce additional complexity and might divert this proposal from its original purpose. So let us stay focused on our main goal: funding the Ethereum Foundation.</p>
@@ -106,10 +106,10 @@ Obviously, if all validators collude, they could choose not to enforce this mech
 Let us now see if our proposal is robust in term of incentives.
 Obviously, since the Ethereum Foundation members as well as the Foundation itself own some Ethers, they could cast the highest vote possible <script type="math/tex">v_{i} = M</script> every time in order to receive more fees – and as they receive more ether, they could bond more stake in order to increase their voting share, creating a feedback loop. I believe that this isn’t a real issue in practice, and I am sure that the foundation will behave honestly but for the sake of security let us try to mitigate this possibility.
 First, we could simply set the <script type="math/tex">M</script> value lower in the validator client implementation, i.e. <script type="math/tex">M = 0.25</script> (this number is very easily verifiable in the source code so there is no incentive to cheat and getting caught in changing it in an update would create a hard fork – so they don’t have an incentive to do this).
-Or another mitigation would be to set M even lower and introduce an additional ceiling <script type="math/tex">C</script>, where it would be possible to vote above M but the validator would have to pay <script type="math/tex"> M + C > p</script> while the other validators who voted <script type="math/tex">v_{i} \leq M</script> would only pay <script type="math/tex">p</script> – this would furthermore make it possible for altruists to fund the Ethereum Foundation even more generously if they so wish (without forcing others to pay more than <script type="math/tex">p</script>). This last parameter <script type="math/tex">C</script> makes it not profitable for a <em>potentially malicious</em> foundation to cheat because in order to cast the recent gains as a vote to increase p, they need to bond this stake; and in the theoretical worst case, they would achieve at most <script type="math/tex">p = M</script>, although I believe that this might not even be possible to raise it that high in practice.</p>
+Or another mitigation would be to set <script type="math/tex">M</script> even lower and introduce an additional ceiling <script type="math/tex">C</script>, where it would be possible to vote above <script type="math/tex">M</script> but the validator would have to pay <script type="math/tex"> M + C > p</script> while the other validators who voted <script type="math/tex">v_{i} \leq M</script> would only pay <script type="math/tex">p</script> – this would furthermore make it possible for altruists to fund the Ethereum Foundation even more generously if they so wish (without forcing others to pay more than <script type="math/tex">p</script>). This last parameter <script type="math/tex">C</script> makes it not profitable for a <em>potentially malicious</em> foundation to cheat because in order to cast the recent gains as a vote to increase p, they need to bond this stake; and in the theoretical worst case, they would achieve at most <script type="math/tex">p = M</script>, although I believe that this might not even be possible to raise it that high in practice.</p>
 
 <h4 id="psychological-layer">Psychological layer</h4>
-<p>As a future validator once we switch to Proof of Stake, I perceive this proposal as a fair balance between subsidizing the Ethereum Foundation and profiting from the transactions fees. Validators benefit greatly from a continuous development of the platform, since the security of their stake depends on it. This symbiotic relationship between the Ethereum Foundation, the core programmers and validators paves the way for a future where each actor wins from the bettermen of the platform.</p>
+<p>As a future validator, once we switch to Proof of Stake, I perceive this proposal as a fair balance between subsidizing the Ethereum Foundation and profiting from the transactions fees. Validators benefit greatly from a continuous development of the platform, since the security of their stake depends on it. This symbiotic relationship between the Ethereum Foundation, the core programmers and validators paves the way for a future where each actor wins from the bettermen of the platform.</p>
 
 <p>Additionally, the switch to Proof of Stake is something that long-term holders desire, and this way of funding the Foundation would further incentivize the switch to Proof of Stake – from which both would benefit.</p>
 
