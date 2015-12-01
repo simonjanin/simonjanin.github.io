@@ -6,8 +6,8 @@
 </description>
     <link>http://simonjanin.ch/</link>
     <atom:link href="http://simonjanin.ch/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 02 Dec 2015 00:36:46 +0100</pubDate>
-    <lastBuildDate>Wed, 02 Dec 2015 00:36:46 +0100</lastBuildDate>
+    <pubDate>Wed, 02 Dec 2015 00:55:30 +0100</pubDate>
+    <lastBuildDate>Wed, 02 Dec 2015 00:55:30 +0100</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
@@ -48,22 +48,27 @@ To make things simpler, a validator casts his vote &lt;script type=&quot;math/te
 
 &lt;h4 id=&quot;consensus&quot;&gt;Consensus&lt;/h4&gt;
 &lt;p&gt;This simple tweak would be directly implemented into the Proof of Stake validation algorithm in such a way that each block validator would automatically send &lt;script type=&quot;math/tex&quot;&gt;1-p\%&lt;/script&gt; of the transactions fees to himself and &lt;script type=&quot;math/tex&quot;&gt;p\%&lt;/script&gt; to a smart contract belonging to the Ethereum Foundation. In order for this mechanism to be enforced by all validators, the majority of validators would need to mark blocks that don’t respect this mechanism as invalid.
-Obviously, if all validators collude, they could choose not to enforce this mechanism, but they may as well just all vote for &lt;script type=&quot;math/tex&quot;&gt;p=0&lt;/script&gt;, so they have no incentive to game the system (in the form I described above).&lt;/p&gt;
+Obviously, if all validators collude, they could choose not to enforce this mechanism, but they may as well just all vote for &lt;script type=&quot;math/tex&quot;&gt;p=0&lt;/script&gt;, so they have no incentive to game the system (in the form I described above).
+The only consensus problem could arise if there are a large amount of altruists, but still more “rational” validators – this is similar to the problem addressed in the next section.&lt;/p&gt;
 
 &lt;h4 id=&quot;economical-incentives-analysis&quot;&gt;Economical incentives analysis&lt;/h4&gt;
 &lt;p&gt;So far we have only used very simple mathematics. Many different such mechanisms can be conveived of, but we only present the most basic here as it might be good enough.
 Let us now see if our proposal is robust in term of incentives.
+I generally refer to the Ethereum Foundation here, but this also applies to altruists.
 Obviously, since the Ethereum Foundation members as well as the Foundation itself own some Ethers, they could cast the highest vote possible &lt;script type=&quot;math/tex&quot;&gt;v_{i} = M&lt;/script&gt; every time in order to receive more fees – and as they receive more ether, they could bond more stake in order to increase their voting share, creating a feedback loop. I believe that this isn’t a real issue in practice, and I am sure that the foundation will behave honestly but for the sake of security let us try to mitigate this possibility.
 First, we could simply set the &lt;script type=&quot;math/tex&quot;&gt;M&lt;/script&gt; value lower in the validator client implementation, i.e. &lt;script type=&quot;math/tex&quot;&gt;M = 0.25&lt;/script&gt; (this number is very easily verifiable in the source code so there is no incentive to cheat and getting caught in changing it in an update would create a hard fork – so they don’t have an incentive to do this).
 Or another mitigation would be to set &lt;script type=&quot;math/tex&quot;&gt;M&lt;/script&gt; even lower and introduce an additional ceiling &lt;script type=&quot;math/tex&quot;&gt;C&lt;/script&gt;, where it would be possible to vote above &lt;script type=&quot;math/tex&quot;&gt;M&lt;/script&gt; but the validator would have to pay &lt;script type=&quot;math/tex&quot;&gt; M + C &gt; p&lt;/script&gt; while the other validators who voted &lt;script type=&quot;math/tex&quot;&gt;v_{i} \leq M&lt;/script&gt; would only pay &lt;script type=&quot;math/tex&quot;&gt;p&lt;/script&gt; – this would furthermore make it possible for altruists to fund the Ethereum Foundation even more generously if they so wish (without forcing others to pay more than &lt;script type=&quot;math/tex&quot;&gt;p&lt;/script&gt;). This last parameter &lt;script type=&quot;math/tex&quot;&gt;C&lt;/script&gt; makes it not profitable for a &lt;em&gt;potentially malicious&lt;/em&gt; foundation to cheat because in order to cast the recent gains as a vote to increase p, they need to bond this stake; and in the theoretical worst case, they would achieve at most &lt;script type=&quot;math/tex&quot;&gt;p = M&lt;/script&gt;, although I believe that this might not even be possible to raise it that high in practice.&lt;/p&gt;
 
+&lt;p&gt;Therefore, in the theoretical absolute worst case, we only need to have a global minimal consensus that &lt;script type=&quot;math/tex&quot;&gt;0 \leq p \leq M&lt;/script&gt;. Although probably much less in practice, further analysis is required to quantify this precisely.&lt;/p&gt;
+
 &lt;h4 id=&quot;psychological-layer&quot;&gt;Psychological layer&lt;/h4&gt;
 &lt;p&gt;As a future validator, once we switch to Proof of Stake, I perceive this proposal as a fair balance between subsidizing the Ethereum Foundation and profiting from the transactions fees. Validators benefit greatly from a continuous development of the platform, since the security of their stake depends on it. This symbiotic relationship between the Ethereum Foundation, the core programmers and validators paves the way for a future where each actor wins from the bettermen of the platform.&lt;/p&gt;
 
-&lt;p&gt;Additionally, the switch to Proof of Stake is something that long-term holders desire, and this way of funding the Foundation would further incentivize the switch to Proof of Stake – from which both would benefit.&lt;/p&gt;
+&lt;p&gt;Additionally, the switch to Proof of Stake is something that long-term holders seem to desire, and this way of funding the Foundation would further incentivize the switch to Proof of Stake to happen sooner as well – from which both would benefit.&lt;/p&gt;
 
 &lt;h4 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h4&gt;
 &lt;p&gt;In light of our quick analysis, this mechanism seems to fit nicely into the Proof of Stake system and the incentive structure appears to be pretty robust.
+Further analysis is required to precisely determine what the practical consensus upperbound is.
 Also, I believe that the community will probably not be opposed to this since every validator has his word, and everyone contributes equally – while altruits are given the possiblity to contribute even more if they wish.&lt;/p&gt;
 
 &lt;p&gt;As I said before, this proposal is not mutually exclusive to the other options of funding the Foundation, but this seems the fairest one. No inflation. No secret. No outside influence.&lt;/p&gt;
