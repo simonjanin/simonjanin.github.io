@@ -6,9 +6,82 @@
 </description>
     <link>http://simonjanin.ch/</link>
     <atom:link href="http://simonjanin.ch/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 24 Nov 2015 23:42:23 +0100</pubDate>
-    <lastBuildDate>Tue, 24 Nov 2015 23:42:23 +0100</lastBuildDate>
+    <pubDate>Wed, 02 Dec 2015 00:04:08 +0100</pubDate>
+    <lastBuildDate>Wed, 02 Dec 2015 00:04:08 +0100</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>A Proof of Stake based voting system proposal to fund the Ethereum foundation</title>
+        <description>&lt;p&gt;Projects of the scale and complexity of Ethereum and Bitcoin are typically subjected to the issue of how to fund them.
+The Bitcoin Foundation is founded by a consequent number of actors, some relatively large Bitcoin-based ventures as well as a fair number of individuals.
+Nonetheless, as of today, only three members of the Bitcoin foundation are actually paid salaries.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Ethereum is a very complex project, and it seems obvious that it could not be realized with only three full-time developers -- notwithstanding the large open-source participation it has benefited from, the core development of the platform requires a large focused effort.&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;There have been a few proposals on how to fund the Ethereum foundation in the future: &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;sponsorships&lt;/li&gt;
+  &lt;li&gt;calls for donation&lt;/li&gt;
+  &lt;li&gt;creating new ether that would be sold by the foundation (typically in the new genesis block)&lt;/li&gt;
+  &lt;li&gt;having miners pay a fraction of the mining fees they collected (or of the reward of the block they mined).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Those options are not mutually exclusive – although I particularly dislike the third option of artificially increasing supply.
+In this article I will explore the last possibility, focusing solely on Proof of Stake – which, to my knowledge, has not been proposed before.&lt;/p&gt;
+
+&lt;h4 id=&quot;the-proposal&quot;&gt;The proposal&lt;/h4&gt;
+
+&lt;p&gt;First off, let me say that this would probably not be adapted for Proof of Work – because of the nothing at stake problem; this is why we need Proof of Stake.
+Alright, let’s get started!&lt;/p&gt;
+
+&lt;p&gt;Let us introduce the parameter &lt;script type=&quot;math/tex&quot;&gt;p&lt;/script&gt; which is the percentage of the transactions fees that will be donated to the Ethereum foundation (it could apply to the block reward as well, this depends on the actual Proof of Stake implementation, so I will stick to the first option for now).
+Each time a new block is generated, that is every 17 seconds as of today, each validator &lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt; of the platform will cast a vote &lt;script type=&quot;math/tex&quot;&gt;v_{i} \in [0,M]&lt;/script&gt; of weight &lt;script type=&quot;math/tex&quot;&gt;w_{i}&lt;/script&gt; linearly proportional to its actual bounded stake in the platform in the form of a percentage. &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+0 &lt; M \leq 1 %]]&gt;&lt;/script&gt; is the maximal allowed value for a vote
+The vote &lt;script type=&quot;math/tex&quot;&gt;v_{i}&lt;/script&gt; corresponds to the &lt;script type=&quot;math/tex&quot;&gt;p&lt;/script&gt; value that the validator wishes to be enforced. Concretely he would choose &lt;script type=&quot;math/tex&quot;&gt;v_{i} = 0.00&lt;/script&gt; if he would like &lt;script type=&quot;math/tex&quot;&gt;p&lt;/script&gt; to become &lt;script type=&quot;math/tex&quot;&gt;0&lt;/script&gt;, while he would select &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+0 &lt; v_{i} \leq 1 %]]&gt;&lt;/script&gt; otherwise.&lt;/p&gt;
+
+&lt;p&gt;After every validator has voted, the &lt;script type=&quot;math/tex&quot;&gt;p&lt;/script&gt; value for the present block is given bya simple weighted sum: &lt;script type=&quot;math/tex&quot;&gt;p = \sum_{i} v_{i} *w_{i}&lt;/script&gt;. Additionnally, we could limit &lt;script type=&quot;math/tex&quot;&gt;p&lt;/script&gt; within some range, typically &lt;script type=&quot;math/tex&quot;&gt;0.5&lt;/script&gt; or less.
+To make things simpler, a validator casts his vote &lt;script type=&quot;math/tex&quot;&gt;v_{i}&lt;/script&gt; each time he bonds some stake in the platform, and he can change his vote every &lt;script type=&quot;math/tex&quot;&gt;T&lt;/script&gt; blocks for &lt;script type=&quot;math/tex&quot;&gt;T&lt;/script&gt; desirably relatively large but smaller than the bonding time.&lt;/p&gt;
+
+&lt;p&gt;Instead of limiting this feature to sending transactions fees to the address of the Ethereum Foundation, this could be extended into a full-fledged feature of the validating algorithm – for funding related side projects. This might be interesting; although there are quite a few subtleties that would introduce additional complexity and might divert this proposal from its original purpose. So let us stay focused on our main goal: funding the Ethereum Foundation.&lt;/p&gt;
+
+&lt;h4 id=&quot;consensus&quot;&gt;Consensus&lt;/h4&gt;
+&lt;p&gt;This simple tweak would be directly implemented into the Proof of Stake validation algorithm in such a way that each block validator would automatically send &lt;script type=&quot;math/tex&quot;&gt;1-p\%&lt;/script&gt; of the transactions fees to himself and &lt;script type=&quot;math/tex&quot;&gt;p\%&lt;/script&gt; to a smart contract belonging to the Ethereum Foundation. In order for this mechanism to be enforced by all validators, the majority of validators would need to mark blocks that don’t respect this mechanism as invalid.
+Obviously, if all validators collude, they could choose not to enforce this mechanism, but they may as well just all vote for &lt;script type=&quot;math/tex&quot;&gt;p=0&lt;/script&gt;, so they have no incentive to game the system (in the form I described above).&lt;/p&gt;
+
+&lt;h4 id=&quot;economical-incentives-analysis&quot;&gt;Economical incentives analysis&lt;/h4&gt;
+&lt;p&gt;So far we have only used very simple mathematics. Many different such mechanisms can be conveived of, but we only present the most basic here as it might be good enough.
+Let us now see if our proposal is robust in term of incentives.
+Obviously, since the Ethereum Foundation members as well as the Foundation itself own some Ethers, they could cast the highest vote possible &lt;script type=&quot;math/tex&quot;&gt;v_{i} = M&lt;/script&gt; every time in order to receive more fees – and as they receive more ether, they could bond more stake in order to increase their voting share, creating a feedback loop. I believe that this isn’t a real issue in practice, and I am sure that the foundation will behave honestly but for the sake of security let us try to mitigate this possibility.
+First, we could simply set the &lt;script type=&quot;math/tex&quot;&gt;M&lt;/script&gt; value lower in the validator client implementation, i.e. &lt;script type=&quot;math/tex&quot;&gt;M = 0.25&lt;/script&gt; (this number is very easily verifiable in the source code so there is no incentive to cheat and getting caught in changing it in an update would create a hard fork – so they don’t have an incentive to do this).
+Or another mitigation would be to set M even lower and introduce an additional ceiling &lt;script type=&quot;math/tex&quot;&gt;C&lt;/script&gt;, where it would be possible to vote above M but the validator would have to pay &lt;script type=&quot;math/tex&quot;&gt; M + C &gt; p&lt;/script&gt; while the other validators who voted &lt;script type=&quot;math/tex&quot;&gt;v_{i} \leq M&lt;/script&gt; would only pay &lt;script type=&quot;math/tex&quot;&gt;p&lt;/script&gt; – this would furthermore make it possible for altruists to fund the Ethereum Foundation even more generously if they so wish (without forcing others to pay more than &lt;script type=&quot;math/tex&quot;&gt;p&lt;/script&gt;). This last parameter &lt;script type=&quot;math/tex&quot;&gt;C&lt;/script&gt; makes it not profitable for a &lt;em&gt;potentially malicious&lt;/em&gt; foundation to cheat because in order to cast the recent gains as a vote to increase p, they need to bond this stake; and in the theoretical worst case, they would achieve at most &lt;script type=&quot;math/tex&quot;&gt;p = M&lt;/script&gt;, although I believe that this might not even be possible to raise it that high in practice.&lt;/p&gt;
+
+&lt;h4 id=&quot;psychological-layer&quot;&gt;Psychological layer&lt;/h4&gt;
+&lt;p&gt;As a future validator once we switch to Proof of Stake, I perceive this proposal as a fair balance between subsidizing the Ethereum Foundation and profiting from the transactions fees. Validators benefit greatly from a continuous development of the platform, since the security of their stake depends on it. This symbiotic relationship between the Ethereum Foundation, the core programmers and validators paves the way for a future where each actor wins from the bettermen of the platform.&lt;/p&gt;
+
+&lt;p&gt;Additionally, the switch to Proof of Stake is something that long-term holders desire, and this way of funding the Foundation would further incentivize the switch to Proof of Stake – from which both would benefit.&lt;/p&gt;
+
+&lt;h4 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h4&gt;
+&lt;p&gt;In light of our quick analysis, this mechanism seems to fit nicely into the Proof of Stake system and the incentive structure appears to be pretty robust.
+Also, I believe that the community will probably not be opposed to this since every validator has his word, and everyone contributes equally – while altruits are given the possiblity to contribute even more if they wish.&lt;/p&gt;
+
+&lt;p&gt;As I said before, this proposal is not mutually exclusive to the other options of funding the Foundation, but this seems the fairest one. No inflation. No secret. No outside influence.&lt;/p&gt;
+
+&lt;p&gt;I am looking forward to reading your comments and suggestions for improving this article.&lt;/p&gt;
+
+&lt;p&gt;Thanks to HodlDwon for bringing up the issue of funding.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 01 Dec 2015 22:25:30 +0100</pubDate>
+        <link>http://simonjanin.ch/cryptocurrency/ethereum/2015/12/01/a-PoS-voting-system-to-fund-the-Ethereum-foundation.html</link>
+        <guid isPermaLink="true">http://simonjanin.ch/cryptocurrency/ethereum/2015/12/01/a-PoS-voting-system-to-fund-the-Ethereum-foundation.html</guid>
+        
+        
+        <category>cryptocurrency</category>
+        
+        <category>ethereum</category>
+        
+      </item>
     
       <item>
         <title>Ethereum for Investors -- Introduction</title>

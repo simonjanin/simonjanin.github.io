@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>A Proof of Stake based voting system proposal to fund the Ethereum foundation</title>
+  <meta name="description" content="Projects of the scale and complexity of Ethereum and Bitcoin are typically subjected to the issue of how to fund them.The Bitcoin Foundation is founded by a ...">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://simonjanin.ch/cryptocurrency/ethereum/2015/12/01/a-PoS-voting-system-to-fund-the-Ethereum-foundation.html">
+  <link rel="alternate" type="application/rss+xml" title="Simon Janin's Blog" href="http://simonjanin.ch/feed.xml" />
+  <script async type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Simon Janin's Blog</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">A Proof of Stake based voting system proposal to fund the Ethereum foundation</h1>
+    <p class="post-meta">Dec 1, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>Projects of the scale and complexity of Ethereum and Bitcoin are typically subjected to the issue of how to fund them.
+The Bitcoin Foundation is founded by a consequent number of actors, some relatively large Bitcoin-based ventures as well as a fair number of individuals.
+Nonetheless, as of today, only three members of the Bitcoin foundation are actually paid salaries.</p>
+
+<p><code>Ethereum is a very complex project, and it seems obvious that it could not be realized with only three full-time developers -- notwithstanding the large open-source participation it has benefited from, the core development of the platform requires a large focused effort.</code></p>
+
+<p>There have been a few proposals on how to fund the Ethereum foundation in the future: </p>
+
+<ul>
+  <li>sponsorships</li>
+  <li>calls for donation</li>
+  <li>creating new ether that would be sold by the foundation (typically in the new genesis block)</li>
+  <li>having miners pay a fraction of the mining fees they collected (or of the reward of the block they mined).</li>
+</ul>
+
+<p>Those options are not mutually exclusive – although I particularly dislike the third option of artificially increasing supply.
+In this article I will explore the last possibility, focusing solely on Proof of Stake – which, to my knowledge, has not been proposed before.</p>
+
+<h4 id="the-proposal">The proposal</h4>
+
+<p>First off, let me say that this would probably not be adapted for Proof of Work – because of the nothing at stake problem; this is why we need Proof of Stake.
+Alright, let’s get started!</p>
+
+<p>Let us introduce the parameter <script type="math/tex">p</script> which is the percentage of the transactions fees that will be donated to the Ethereum foundation (it could apply to the block reward as well, this depends on the actual Proof of Stake implementation, so I will stick to the first option for now).
+Each time a new block is generated, that is every 17 seconds as of today, each validator <script type="math/tex">i</script> of the platform will cast a vote <script type="math/tex">v_{i} \in [0,M]</script> of weight <script type="math/tex">w_{i}</script> linearly proportional to its actual bounded stake in the platform in the form of a percentage. <script type="math/tex">% <![CDATA[
+0 < M \leq 1 %]]></script> is the maximal allowed value for a vote
+The vote <script type="math/tex">v_{i}</script> corresponds to the <script type="math/tex">p</script> value that the validator wishes to be enforced. Concretely he would choose <script type="math/tex">v_{i} = 0.00</script> if he would like <script type="math/tex">p</script> to become <script type="math/tex">0</script>, while he would select <script type="math/tex">% <![CDATA[
+0 < v_{i} \leq 1 %]]></script> otherwise.</p>
+
+<p>After every validator has voted, the <script type="math/tex">p</script> value for the present block is given bya simple weighted sum: <script type="math/tex">p = \sum_{i} v_{i} *w_{i}</script>. Additionnally, we could limit <script type="math/tex">p</script> within some range, typically <script type="math/tex">0.5</script> or less.
+To make things simpler, a validator casts his vote <script type="math/tex">v_{i}</script> each time he bonds some stake in the platform, and he can change his vote every <script type="math/tex">T</script> blocks for <script type="math/tex">T</script> desirably relatively large but smaller than the bonding time.</p>
+
+<p>Instead of limiting this feature to sending transactions fees to the address of the Ethereum Foundation, this could be extended into a full-fledged feature of the validating algorithm – for funding related side projects. This might be interesting; although there are quite a few subtleties that would introduce additional complexity and might divert this proposal from its original purpose. So let us stay focused on our main goal: funding the Ethereum Foundation.</p>
+
+<h4 id="consensus">Consensus</h4>
+<p>This simple tweak would be directly implemented into the Proof of Stake validation algorithm in such a way that each block validator would automatically send <script type="math/tex">1-p\%</script> of the transactions fees to himself and <script type="math/tex">p\%</script> to a smart contract belonging to the Ethereum Foundation. In order for this mechanism to be enforced by all validators, the majority of validators would need to mark blocks that don’t respect this mechanism as invalid.
+Obviously, if all validators collude, they could choose not to enforce this mechanism, but they may as well just all vote for <script type="math/tex">p=0</script>, so they have no incentive to game the system (in the form I described above).</p>
+
+<h4 id="economical-incentives-analysis">Economical incentives analysis</h4>
+<p>So far we have only used very simple mathematics. Many different such mechanisms can be conveived of, but we only present the most basic here as it might be good enough.
+Let us now see if our proposal is robust in term of incentives.
+Obviously, since the Ethereum Foundation members as well as the Foundation itself own some Ethers, they could cast the highest vote possible <script type="math/tex">v_{i} = M</script> every time in order to receive more fees – and as they receive more ether, they could bond more stake in order to increase their voting share, creating a feedback loop. I believe that this isn’t a real issue in practice, and I am sure that the foundation will behave honestly but for the sake of security let us try to mitigate this possibility.
+First, we could simply set the <script type="math/tex">M</script> value lower in the validator client implementation, i.e. <script type="math/tex">M = 0.25</script> (this number is very easily verifiable in the source code so there is no incentive to cheat and getting caught in changing it in an update would create a hard fork – so they don’t have an incentive to do this).
+Or another mitigation would be to set M even lower and introduce an additional ceiling <script type="math/tex">C</script>, where it would be possible to vote above M but the validator would have to pay <script type="math/tex"> M + C > p</script> while the other validators who voted <script type="math/tex">v_{i} \leq M</script> would only pay <script type="math/tex">p</script> – this would furthermore make it possible for altruists to fund the Ethereum Foundation even more generously if they so wish (without forcing others to pay more than <script type="math/tex">p</script>). This last parameter <script type="math/tex">C</script> makes it not profitable for a <em>potentially malicious</em> foundation to cheat because in order to cast the recent gains as a vote to increase p, they need to bond this stake; and in the theoretical worst case, they would achieve at most <script type="math/tex">p = M</script>, although I believe that this might not even be possible to raise it that high in practice.</p>
+
+<h4 id="psychological-layer">Psychological layer</h4>
+<p>As a future validator once we switch to Proof of Stake, I perceive this proposal as a fair balance between subsidizing the Ethereum Foundation and profiting from the transactions fees. Validators benefit greatly from a continuous development of the platform, since the security of their stake depends on it. This symbiotic relationship between the Ethereum Foundation, the core programmers and validators paves the way for a future where each actor wins from the bettermen of the platform.</p>
+
+<p>Additionally, the switch to Proof of Stake is something that long-term holders desire, and this way of funding the Foundation would further incentivize the switch to Proof of Stake – from which both would benefit.</p>
+
+<h4 id="conclusion">Conclusion</h4>
+<p>In light of our quick analysis, this mechanism seems to fit nicely into the Proof of Stake system and the incentive structure appears to be pretty robust.
+Also, I believe that the community will probably not be opposed to this since every validator has his word, and everyone contributes equally – while altruits are given the possiblity to contribute even more if they wish.</p>
+
+<p>As I said before, this proposal is not mutually exclusive to the other options of funding the Foundation, but this seems the fairest one. No inflation. No secret. No outside influence.</p>
+
+<p>I am looking forward to reading your comments and suggestions for improving this article.</p>
+
+<p>Thanks to HodlDwon for bringing up the issue of funding.</p>
+
+  </article>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'simonjanin';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Simon Janin's Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Simon Janin's Blog</li>
+          <li><a href="http://www.google.com/recaptcha/mailhide/d?k=01NQZBL7PUIi2TzD8b_2hZ-Q==&amp;c=DipQJzq-lt8y9T2XFnsdvqvzMgemMmioTY68KDoGEkc=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501NQZBL7PUIi2TzD8b_2hZ-Q\75\75\46c\75DipQJzq-lt8y9T2XFnsdvqvzMgemMmioTY68KDoGEkc\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">s...</a>@gmail.com</li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/simonjanin">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">simonjanin</span>
+            </a>
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">Simon Janin writes articles on various books, computer and technology, self-improvement and social issues.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
