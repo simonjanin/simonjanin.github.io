@@ -6,14 +6,14 @@
 </description>
     <link>http://simonjanin.ch/</link>
     <atom:link href="http://simonjanin.ch/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 02 Dec 2015 00:55:30 +0100</pubDate>
-    <lastBuildDate>Wed, 02 Dec 2015 00:55:30 +0100</lastBuildDate>
+    <pubDate>Wed, 02 Dec 2015 15:01:35 +0100</pubDate>
+    <lastBuildDate>Wed, 02 Dec 2015 15:01:35 +0100</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
         <title>A Proof of Stake based voting system proposal to fund the Ethereum foundation</title>
         <description>&lt;p&gt;Projects of the scale and complexity of Ethereum and Bitcoin are typically subjected to the issue of how to fund them.
-The &lt;a href=&quot;http://bitcoinfoundation.org/member/&quot;&gt;Bitcoin Foundation&lt;/a&gt; is founded by a consequent number of actors, some relatively large Bitcoin-based ventures as well as a fair number of individuals.
+The &lt;a href=&quot;http://bitcoinfoundation.org/member/&quot;&gt;Bitcoin Foundation&lt;/a&gt; is funded by a consequent number of actors, some relatively large Bitcoin-based ventures as well as a fair number of individuals.
 Nonetheless, as of today, only three members of the Bitcoin foundation are actually paid salaries.&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;Ethereum is a very complex project, and it seems obvious that it could not be realized with only three full-time developers -- notwithstanding the large open-source participation it has benefited from, the core development of the platform requires a large focused effort.&lt;/code&gt;&lt;/p&gt;
