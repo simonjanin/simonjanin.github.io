@@ -6,9 +6,28 @@
 </description>
     <link>http://simonjanin.ch/</link>
     <atom:link href="http://simonjanin.ch/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 02 Dec 2015 15:01:35 +0100</pubDate>
-    <lastBuildDate>Wed, 02 Dec 2015 15:01:35 +0100</lastBuildDate>
+    <pubDate>Fri, 18 Dec 2015 17:12:07 +0100</pubDate>
+    <lastBuildDate>Fri, 18 Dec 2015 17:12:07 +0100</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>Ethereum for Investors, part II -- Opportunities and Risks</title>
+        <description>&lt;p&gt;This second video on the series “Ethereum for Investors” was quite fascinating to make!&lt;/p&gt;
+
+&lt;p&gt;I discuss the different opportunities and risks in the Ethereum space, with a segway into Proof of Stake; I mention Augur, Slock.it, Digix, HitFin, IPFS and I try to give you an overview that will help you make the right decisions with your time and money.&lt;/p&gt;
+
+&lt;p&gt;The PDF of the presentation is &lt;a href=&quot;/downloads/Ethereum_for_Investors-Opportunities_and_Risks.pdf&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 18 Dec 2015 18:11:25 +0100</pubDate>
+        <link>http://simonjanin.ch/cryptocurrency/ethereum/2015/12/18/Ethereum-for-Investors-part-II-Opportunities-and-Risks.html</link>
+        <guid isPermaLink="true">http://simonjanin.ch/cryptocurrency/ethereum/2015/12/18/Ethereum-for-Investors-part-II-Opportunities-and-Risks.html</guid>
+        
+        
+        <category>cryptocurrency</category>
+        
+        <category>ethereum</category>
+        
+      </item>
     
       <item>
         <title>A Proof of Stake based voting system proposal to fund the Ethereum foundation</title>
