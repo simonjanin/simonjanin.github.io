@@ -6,8 +6,8 @@
 </description>
     <link>http://simonjanin.ch/</link>
     <atom:link href="http://simonjanin.ch/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 18 Dec 2015 17:12:07 +0100</pubDate>
-    <lastBuildDate>Fri, 18 Dec 2015 17:12:07 +0100</lastBuildDate>
+    <pubDate>Fri, 18 Dec 2015 18:45:25 +0100</pubDate>
+    <lastBuildDate>Fri, 18 Dec 2015 18:45:25 +0100</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
@@ -15,6 +15,8 @@
         <description>&lt;p&gt;This second video on the series “Ethereum for Investors” was quite fascinating to make!&lt;/p&gt;
 
 &lt;p&gt;I discuss the different opportunities and risks in the Ethereum space, with a segway into Proof of Stake; I mention Augur, Slock.it, Digix, HitFin, IPFS and I try to give you an overview that will help you make the right decisions with your time and money.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/1bn8Wwbum18&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;The PDF of the presentation is &lt;a href=&quot;/downloads/Ethereum_for_Investors-Opportunities_and_Risks.pdf&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -132,9 +134,8 @@ My goal is to make Ethereum accessible to more people, and to help them understa
     
       <item>
         <title>The n-back Challenge</title>
-        <description>&lt;iframe width=&quot;600&quot; height=&quot;1500&quot; src=&quot;https://docs.google.com/spreadsheets/d/15cOSi6QUyg3gW90Kg4hEddKFSo6B6WFYsZMXRCITtS0/pubhtml?gid=859276825&amp;amp;single=true&amp;amp;widget=true&amp;amp;headers=false&quot;&gt;&lt;/iframe&gt;
+        <description>&lt;iframe width=&quot;600&quot; height=&quot;900&quot; src=&quot;https://docs.google.com/spreadsheets/d/15cOSi6QUyg3gW90Kg4hEddKFSo6B6WFYsZMXRCITtS0/pubhtml?gid=859276825&amp;amp;single=true&amp;amp;widget=true&amp;amp;headers=false&quot;&gt;&lt;/iframe&gt;
 
-&lt;iframe width=&quot;600&quot; height=&quot;1500&quot; src=&quot;https://docs.google.com/spreadsheets/d/15cOSi6QUyg3gW90Kg4hEddKFSo6B6WFYsZMXRCITtS0/pubhtml?gid=0&amp;amp;single=true&amp;amp;widget=true&amp;amp;headers=false&quot;&gt;&lt;/iframe&gt;
 </description>
         <pubDate>Thu, 15 Oct 2015 22:59:50 +0200</pubDate>
         <link>http://simonjanin.ch/brain-training/dual-n-back/2015/10/15/the-n-back-challenge.html</link>
