@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>On Predictions and improving one's rationality</title>
+  <meta name="description" content="  There’s no chance that the iPhone is going to get any significant market share.No chance.  – Steve Ballmer, Microsoft CEO (2007)">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://simonjanin.ch/rationality/prediction/learning/feedback/2016/01/02/Prediction-Expertise-and-Feedback.html">
+  <link rel="alternate" type="application/rss+xml" title="Diving out of meta" href="http://simonjanin.ch/feed.xml" />
+  <script async type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Diving out of meta</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">On Predictions and improving one's rationality</h1>
+    <p class="post-meta">Jan 2, 2016</p>
+  </header>
+
+  <article class="post-content">
+    <blockquote>
+  <p>There’s no chance that the iPhone is going to get any significant market share.
+<strong>No chance</strong>.</p>
+
+  <p>– Steve Ballmer, Microsoft CEO (2007)</p>
+</blockquote>
+
+<p>At the time, Microsoft’s shares were worth $30 USD, while Apple’s shares were worth about $9 USD – although anecdotal, it is funny to note that they are today respectively worth $55 and $105 USD, with Apple worth almost twice as much as Microsoft.</p>
+
+<p>Predictions are an integral part of making decisions: they serve the purpose of guiding us through uncertainty.
+Steve Ballmer’s prediction had the form of a horrible one: it was an absolute statement. Of course, we don’t know what Steve Ballmer was really thinking at the time; he might have been terrified at the idea of the iPhone becoming successful, but just hid it well during the interview.
+It is obvious that he had a very strong incentive, as one of the largest Microsoft shareholders, to say that competitors will fail – but what’s more troubling is that <strong>he might actually have believed what he said</strong>.</p>
+
+<p>Let us make an observation: <code>random processes tend to follow normal (Gaussian) distributions, while biological systems can exhibit both normal and power law distributions.</code>
+Because I have the luxery of being able to speak my mind (contrary to Steve Ballmer) and since I don’t want to look like a fool (like Steve Ballmer did), I used plenty of adverbs to atenuate the strength of my previous statement (i.e. “tend to”, “can exhibit”).</p>
+
+<p>While using weakening adverbs lengthen our statements, they protect us from saying utterely wrong things. <code>We should in fact try to give a more probabilistic nature to our opinions and predictions</code>.</p>
+
+<p>It is useful to be aware of the type of distribution we are dealing with before making a prediction. That is, if you were to make a prediction about a random or, at least, pseudo-random process; your best bet is probably to simply pick the middle value – which is more likely to become the median.
+On the other hand, if you had to make a prediction about a biological phenomena exhibiting network effects, you should pick either one of the extremes that you think is more likely and then weight it against similar phenomena (if there are 10 independent outcomes whose probability is hard to estimate, start by assigning them a 10% probability and then run multiple scenario updating probabilities accordingly).</p>
+
+<p>Notwithstanding how crude this heuristic is, it should at least serve as a reminder that it is crucial to minimize biases from partial information, and instead focus on first principles (i.e. which kind of distribution we are likely dealing with and what the baseline is).
+Having done this, you can proceed to fine-tuning your predictions and weighting the different factors you consider will have an impact on the result; but this should come second, not first.
+Then, make sure that your prediction is inherently probabilistic and doesn’t contain any unnecessary absolute statement.</p>
+
+<p>Let us make a small list of principles to abide by:</p>
+
+<ol>
+  <li>No event that doesn’t break the rules of logic a priori has probability 0% – although it could be as low as <script type="math/tex">10^{-100}</script></li>
+  <li>Incompatible events reduce each other’s likelyhood.</li>
+  <li>If the process is akin to a dice roll within a given range, assume a normal distribution. Pick the center as median.</li>
+  <li>If the process is likely to exhibit a network effect (or cumulative effect), consider the possibility of exponential growth or decay (<script type="math/tex">e^{\lambda t}, \lambda \in \mathbb{R}</script>). Pick an extreme and weight it against comparable data.</li>
+  <li>Predictions should be phrased in such a way that they reflect the nature of the probability distribution we believe fits the data the best. Sentences such as “within the range [a,b]” should be favored over picking exact points in general.</li>
+  <li>Prediction is a human endevour – it is not purely mathematical, or even physical. Be aware of the stance you take and compare the risk times the cost of being wrong to the likelyhood times the payoff of being right.</li>
+  <li>There are different kinds of predictions: truth-focused, impact-focused and blackswan-focused – the first aims at correctly assessing an event’s likelyhood, the second tries to either change the course of an event while the third takes a bet on an unlikely event where the payout of being right is larger than the cumulative cost of being wrong multiple times (think of economists predicting crashes: huge payout for calling a crisis, little to no costs for being wrong).</li>
+  <li>To assess someone’s prediction, try to categorize it in one of the three categories given in point 7</li>
+  <li>If truth is your goal, avoid absolute statements. Only apodictical propositions can be safely stated in an absolute way.</li>
+  <li>Whenever there are two competing predictions, favor the simplest (incompetence over maliciousness, normal cases over extremes ones, first principles over anecdotes, natural over surnatural) – which is essentially Occam’s razor.</li>
+  <li>Predictions should be written down and verified a posteriori and serve as a windows into one’s cognitive biases – this might be an excellent way to improve one’s rationality.</li>
+</ol>
+
+<p>This list may come in handy as predictions become more prevalent, in the… future.
+Oh, did I just make an impact and blackswan focused prediction about predictions? This might have gotten unnecessarily meta here.</p>
+
+<p>Anyway, I am excited to soon be able to participate and improve my rationality thanks to Ethereum and blockchain-based predictions markets like Augur and GroupGnosis!</p>
+
+  </article>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'simonjanin';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Simon Janin's blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          
+          <li><a href="http://www.google.com/recaptcha/mailhide/d?k=01NQZBL7PUIi2TzD8b_2hZ-Q==&amp;c=DipQJzq-lt8y9T2XFnsdvqvzMgemMmioTY68KDoGEkc=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501NQZBL7PUIi2TzD8b_2hZ-Q\75\75\46c\75DipQJzq-lt8y9T2XFnsdvqvzMgemMmioTY68KDoGEkc\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">s...</a>@gmail.com</li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/simonjanin">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">simonjanin</span>
+            </a>
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">I am Simon Janin. I write articles on blockchain technology (especially Ethereum), computer science and technology, rationality, self-improvement and social issues.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

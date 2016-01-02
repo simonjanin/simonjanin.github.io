@@ -1,14 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Simon Janin&#39;s Blog</title>
-    <description>Simon Janin writes articles on various books, computer and technology, self-improvement and social issues.
+    <title>Diving out of meta</title>
+    <description>I am Simon Janin. I write articles on blockchain technology (especially Ethereum), computer science and technology, rationality, self-improvement and social issues.
 </description>
     <link>http://simonjanin.ch/</link>
     <atom:link href="http://simonjanin.ch/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 18 Dec 2015 18:45:25 +0100</pubDate>
-    <lastBuildDate>Fri, 18 Dec 2015 18:45:25 +0100</lastBuildDate>
+    <pubDate>Sat, 02 Jan 2016 03:09:41 +0100</pubDate>
+    <lastBuildDate>Sat, 02 Jan 2016 03:09:41 +0100</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>On Predictions and improving one&#39;s rationality</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;There’s no chance that the iPhone is going to get any significant market share.
+&lt;strong&gt;No chance&lt;/strong&gt;.&lt;/p&gt;
+
+  &lt;p&gt;– Steve Ballmer, Microsoft CEO (2007)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;At the time, Microsoft’s shares were worth $30 USD, while Apple’s shares were worth about $9 USD – although anecdotal, it is funny to note that they are today respectively worth $55 and $105 USD, with Apple worth almost twice as much as Microsoft.&lt;/p&gt;
+
+&lt;p&gt;Predictions are an integral part of making decisions: they serve the purpose of guiding us through uncertainty.
+Steve Ballmer’s prediction had the form of a horrible one: it was an absolute statement. Of course, we don’t know what Steve Ballmer was really thinking at the time; he might have been terrified at the idea of the iPhone becoming successful, but just hid it well during the interview.
+It is obvious that he had a very strong incentive, as one of the largest Microsoft shareholders, to say that competitors will fail – but what’s more troubling is that &lt;strong&gt;he might actually have believed what he said&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let us make an observation: &lt;code&gt;random processes tend to follow normal (Gaussian) distributions, while biological systems can exhibit both normal and power law distributions.&lt;/code&gt;
+Because I have the luxery of being able to speak my mind (contrary to Steve Ballmer) and since I don’t want to look like a fool (like Steve Ballmer did), I used plenty of adverbs to atenuate the strength of my previous statement (i.e. “tend to”, “can exhibit”).&lt;/p&gt;
+
+&lt;p&gt;While using weakening adverbs lengthen our statements, they protect us from saying utterely wrong things. &lt;code&gt;We should in fact try to give a more probabilistic nature to our opinions and predictions&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;It is useful to be aware of the type of distribution we are dealing with before making a prediction. That is, if you were to make a prediction about a random or, at least, pseudo-random process; your best bet is probably to simply pick the middle value – which is more likely to become the median.
+On the other hand, if you had to make a prediction about a biological phenomena exhibiting network effects, you should pick either one of the extremes that you think is more likely and then weight it against similar phenomena (if there are 10 independent outcomes whose probability is hard to estimate, start by assigning them a 10% probability and then run multiple scenario updating probabilities accordingly).&lt;/p&gt;
+
+&lt;p&gt;Notwithstanding how crude this heuristic is, it should at least serve as a reminder that it is crucial to minimize biases from partial information, and instead focus on first principles (i.e. which kind of distribution we are likely dealing with and what the baseline is).
+Having done this, you can proceed to fine-tuning your predictions and weighting the different factors you consider will have an impact on the result; but this should come second, not first.
+Then, make sure that your prediction is inherently probabilistic and doesn’t contain any unnecessary absolute statement.&lt;/p&gt;
+
+&lt;p&gt;Let us make a small list of principles to abide by:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;No event that doesn’t break the rules of logic a priori has probability 0% – although it could be as low as &lt;script type=&quot;math/tex&quot;&gt;10^{-100}&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;Incompatible events reduce each other’s likelyhood.&lt;/li&gt;
+  &lt;li&gt;If the process is akin to a dice roll within a given range, assume a normal distribution. Pick the center as median.&lt;/li&gt;
+  &lt;li&gt;If the process is likely to exhibit a network effect (or cumulative effect), consider the possibility of exponential growth or decay (&lt;script type=&quot;math/tex&quot;&gt;e^{\lambda t}, \lambda \in \mathbb{R}&lt;/script&gt;). Pick an extreme and weight it against comparable data.&lt;/li&gt;
+  &lt;li&gt;Predictions should be phrased in such a way that they reflect the nature of the probability distribution we believe fits the data the best. Sentences such as “within the range [a,b]” should be favored over picking exact points in general.&lt;/li&gt;
+  &lt;li&gt;Prediction is a human endevour – it is not purely mathematical, or even physical. Be aware of the stance you take and compare the risk times the cost of being wrong to the likelyhood times the payoff of being right.&lt;/li&gt;
+  &lt;li&gt;There are different kinds of predictions: truth-focused, impact-focused and blackswan-focused – the first aims at correctly assessing an event’s likelyhood, the second tries to either change the course of an event while the third takes a bet on an unlikely event where the payout of being right is larger than the cumulative cost of being wrong multiple times (think of economists predicting crashes: huge payout for calling a crisis, little to no costs for being wrong).&lt;/li&gt;
+  &lt;li&gt;To assess someone’s prediction, try to categorize it in one of the three categories given in point 7&lt;/li&gt;
+  &lt;li&gt;If truth is your goal, avoid absolute statements. Only apodictical propositions can be safely stated in an absolute way.&lt;/li&gt;
+  &lt;li&gt;Whenever there are two competing predictions, favor the simplest (incompetence over maliciousness, normal cases over extremes ones, first principles over anecdotes, natural over surnatural) – which is essentially Occam’s razor.&lt;/li&gt;
+  &lt;li&gt;Predictions should be written down and verified a posteriori and serve as a windows into one’s cognitive biases – this might be an excellent way to improve one’s rationality.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This list may come in handy as predictions become more prevalent, in the… future.
+Oh, did I just make an impact and blackswan focused prediction about predictions? This might have gotten unnecessarily meta here.&lt;/p&gt;
+
+&lt;p&gt;Anyway, I am excited to soon be able to participate and improve my rationality thanks to Ethereum and blockchain-based predictions markets like Augur and GroupGnosis!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 02 Jan 2016 01:05:25 +0100</pubDate>
+        <link>http://simonjanin.ch/rationality/prediction/learning/feedback/2016/01/02/Prediction-Expertise-and-Feedback.html</link>
+        <guid isPermaLink="true">http://simonjanin.ch/rationality/prediction/learning/feedback/2016/01/02/Prediction-Expertise-and-Feedback.html</guid>
+        
+        
+        <category>rationality</category>
+        
+        <category>prediction</category>
+        
+        <category>learning</category>
+        
+        <category>feedback</category>
+        
+      </item>
     
       <item>
         <title>Ethereum for Investors, part II -- Opportunities and Risks</title>
@@ -197,8 +260,9 @@ My goal is to make Ethereum accessible to more people, and to help them understa
     
       <item>
         <title>To solve the Theory of everything, solve AI first</title>
-        <description>&lt;p&gt;In this 16 minutes talk, co-founder and CEO of Deepmind (now Google Deepmind) Demis Hassabis presents his ideas and goals on artificial intelligence and learning. He goes on to say that utimately, we need to solve AI to solve the grand questions of humankind - the grandest one being the theory of everything, a perfect physical model of the universe accounting for litteraly &lt;code&gt;everything&lt;/code&gt;. It might indeed take an AI to solve the inconsistencies physicists encounter at sub-nano level at very high energies, since those problems require to both use quantum mechanics and general relativity - which collide in the extreme cases. 
-&amp;lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/rbsqaJwpu6A&quot; frameborder=&quot;0&quot; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/p&gt;
+        <description>&lt;p&gt;In this 16 minutes talk, co-founder and CEO of Deepmind (now Google Deepmind) Demis Hassabis presents his ideas and goals on artificial intelligence and learning. He goes on to say that utimately, we need to solve AI to solve the grand questions of humankind - the grandest one being the theory of everything, a perfect physical model of the universe accounting for litteraly &lt;code&gt;everything&lt;/code&gt;. It might indeed take an AI to solve the inconsistencies physicists encounter at sub-nano level at very high energies, since those problems require to both use quantum mechanics and general relativity - which collide in the extreme cases. &lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/rbsqaJwpu6A&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;As a Go player, I am tempted to make a prediction on the evolution of computer Go. I have been warned from making such risky predictions, but I feel that even if I turn out to be wrong, I’ll learn from them since I’ll have written them down - this Blog will serve as a track-record for my predictions, and I’m looking forward to seeing how badly I’m wrong in a few years!&lt;/p&gt;
 
