@@ -6,9 +6,51 @@
 </description>
     <link>http://simonjanin.ch/</link>
     <atom:link href="http://simonjanin.ch/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 02 Jan 2016 03:27:27 +0100</pubDate>
-    <lastBuildDate>Sat, 02 Jan 2016 03:27:27 +0100</lastBuildDate>
+    <pubDate>Wed, 02 Mar 2016 02:51:57 +0100</pubDate>
+    <lastBuildDate>Wed, 02 Mar 2016 02:51:57 +0100</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>DeepMind vs. Lee Sedol - predictions of what could be the most significant AI event of the century.</title>
+        <description>&lt;p&gt;In my previous article on the topic in September, I presented what I believed what going to be profoundly important for A.I and the game of Go: Google DeepMind’s.
+I took the risk to predict that machines would be able to beat professional players with 3 or 5 years, or less. Although my prediction was mathematically correct, What happened completely exceeded my expectations: Deepmind’s AlphaGo (the Go playing engine they developped) beat Fan Hui (2 Dan professional) with a score of 5-0!&lt;/p&gt;
+
+&lt;p&gt;In January, Deepmind announced that their engine will face Lee Sedol – arguably one of the best Go players to have ever lived – in a 5-games battle.
+Today, after watching Demis Hassabis’ talk on their latest advances in the field (with a focus on AlphaGo), I feel ready to make another prediction; namely who I believe will win the match: &lt;strong&gt;AlphaGo&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;p&gt;This is not a popular opinion among Go players, especially the professionals.
+My reasonning is the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;AlphaGo’s October version that faced Fan Hui was trained on only 100’000 KGS high dans games. A Korean professional reviewing AlphaGo’s games even said that it played in a typically Japanese style (unofficial interpretation: good looking shape that often lacks severity, or basically a mediocre move that looks nice); western players have been extremely influenced by Japanese Go, and this isn’t surprising that this would show in the games they play on KGS. But today Korean and Chinese players rule the game. This leads me to believe that there is a major room for improvement just by feeding AlphaGo more games; especially higher-quality games – typically from Korean and Chinese professionals. This should be able to significantly improve AlphaGo’s evaluation function.&lt;/li&gt;
+  &lt;li&gt;At the time of the encounter with Fan Hui (in October 2015), Deepmind’s strength was around 3000 ELO points – based upon standard Bayesian inference on its games against the strongest Go engines in the world (Zen and Crazy Stones); this method for gauging strength becomes extremely accurate as the number of games played grows. The presentation below shows very well that the team at Deepmind is fully aware of this and uses very strict metrics to measure improvement. &lt;/li&gt;
+  &lt;li&gt;AlphaGo can play against itself millions of times in a single day: an amount of experience that no human can ever top. Furthermore, it’s evident that Google is going to devote massive ressources to what could be the most important event in 21st century A.I History.&lt;/li&gt;
+  &lt;li&gt;Humans get tired. AlphaGo won’t. The games will last 4 to 5 hours! Only bugs are to be feared; but then again, I trust Google’s engineers have performed a high level of testing, although the deadlines are very tight.&lt;/li&gt;
+  &lt;li&gt;To finish, it’s likely that they will improve the search and scoring function significantly. If so, this could result in a major overall improvement.&lt;/li&gt;
+  &lt;li&gt;It’s also unclear to me what kind of hardware they are allowed to use during the match. Because I would not be surprised if they upgraded it; this could also play an important role.&lt;/li&gt;
+  &lt;li&gt;They could even select an opening that Lee Sedol doesn’t feel confortable with when they play black, while he doesn’t have this advantage against AlphaGo. But I don’t think this will be necessary.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/4fjmnOQuqao&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;This is why my money is on AlphaGo. To be honest I wasn’t sure until I watched the presentation above.
+Here are how I evaluate the possible outcomes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;AlphaGo wins 5-0: 24%&lt;/li&gt;
+  &lt;li&gt;AlphaGo wins 4-1 or more: 46%&lt;/li&gt;
+  &lt;li&gt;AlphaGo wins 3-2 or more: 65%&lt;/li&gt;
+  &lt;li&gt;AlphaGo loses: 35%&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 02 Mar 2016 02:45:35 +0100</pubDate>
+        <link>http://simonjanin.ch/learning/2016/03/02/DeepMind-vs-Lee-Sedol.html</link>
+        <guid isPermaLink="true">http://simonjanin.ch/learning/2016/03/02/DeepMind-vs-Lee-Sedol.html</guid>
+        
+        
+        <category>learning</category>
+        
+      </item>
     
       <item>
         <title>On Predictions and improving one&#39;s rationality</title>
